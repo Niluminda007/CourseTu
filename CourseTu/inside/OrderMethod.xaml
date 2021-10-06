@@ -1,0 +1,40 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseTu.inside"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="CourseTu.inside.OrderMethod"
+        mc:Ignorable="d"
+        Title="OrderMethod"
+         Height="450" Width="600">
+    <Grid Width="600" Margin="0,0,-8,-3">
+        <Grid HorizontalAlignment="Left" Height="300" Margin="88,51,0,0" VerticalAlignment="Top" Width="432">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <Rectangle Fill="#FFF3FD18" HorizontalAlignment="Left" Height="300" Stroke="WhiteSmoke" VerticalAlignment="Top" Width="3" Margin="199,2,0,-2" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Button Height="Auto" Margin="27,28,-20,48" Background="White" Grid.Column="1" BorderBrush="White" Click="deliveryClick" >
+                <Image HorizontalAlignment="Left" Height="160" VerticalAlignment="Top" Width="165" Source="/CourseTu;component/Assets/deliverSure.png" Grid.Column="1" RenderTransformOrigin="0.255,0.446"/>
+            </Button>
+            <Button Height="Auto" Margin="10,28,24,48" Background="White" Grid.Column="0" BorderBrush="White" Click="btnTakeAway" >
+                <Image x:Name="takeAway" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="137" Source="/CourseTu;component/Assets/takeaway_bag.png" RenderTransformOrigin="0.549,0.729"/>
+            </Button>
+            
+        </Grid>
+
+    </Grid>
+</Window>

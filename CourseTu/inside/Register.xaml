@@ -1,0 +1,92 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseTu.inside"
+        xmlns:CustomControls="clr-namespace:CourseTu.CustomControls" x:Class="CourseTu.inside.Register"
+        mc:Ignorable="d"
+        Title="Register" Height="700" Width="1200">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF009245" Offset="0"/>
+                <GradientStop Color="#FFFCEE21" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="265*"/>
+            <ColumnDefinition Width="927*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="403,598,0,0" VerticalAlignment="Top" Width="145" Height="40" Click="Button_Click" Grid.Column="1" BorderBrush="White">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF72F319" Offset="0"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        
+        <Image HorizontalAlignment="Left" Height="836" Margin="-516,-16,0,-151" VerticalAlignment="Top" Width="1280" Source="smoke.png" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-105.27"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="442" Margin="480,416,-723,-189" VerticalAlignment="Top" Width="1170" Source="smoke.png" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="56.747"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="125,598,0,0" VerticalAlignment="Top" Width="145" Height="38" Click="backClick" Grid.Column="1" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF72F319" Offset="0"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+
+        <Rectangle Grid.ColumnSpan="2" Fill="WhiteSmoke" HorizontalAlignment="Left" Height="504" Margin="148,52,0,0" VerticalAlignment="Top" Width="937" RadiusY="14" RadiusX="14"/>
+        <CustomControls:TextBoxWithPlaceHolder x:Name="firstN"  HorizontalAlignment="Left" Height="63" Margin="235,142,0,0" VerticalAlignment="Top" Width="275" 
+                                               PlaceHolder="First Name" Grid.ColumnSpan="2"/>
+        <CustomControls:TextBoxWithPlaceHolder x:Name="lastN" HorizontalAlignment="Left" Height="63" Margin="403,154,0,0" VerticalAlignment="Top" Width="274"
+                                               PlaceHolder="Last name" Grid.Column="1"/>
+        <CustomControls:TextBoxWithPlaceHolder x:Name="emailadd" HorizontalAlignment="Left" Height="63" Margin="235,254,0,0" VerticalAlignment="Top" Width="276"
+                                               PlaceHolder="Email" Grid.ColumnSpan="2"/>
+        <CustomControls:TextBoxWithPlaceHolder x:Name="UserName" HorizontalAlignment="Left" Height="63" Margin="403,254,0,0" VerticalAlignment="Top" Width="100"
+                                               PlaceHolder="UserName" Grid.Column="1"/>
+        <CustomControls:TextBoxWithPlaceHolder x:Name="Password" HorizontalAlignment="Left" Height="63" Margin="238,366,0,0" VerticalAlignment="Top" Width="261"
+                                               PlaceHolder="Password" Grid.ColumnSpan="2"/>
+        <CustomControls:TextBoxWithPlaceHolder x:Name="conPassword" HorizontalAlignment="Left" Height="63" Margin="403,366,0,0" VerticalAlignment="Top" Width="275"
+                                               PlaceHolder="Confirm Password" Grid.Column="1"/>
+
+        <CustomControls:TextBoxWithPlaceHolder x:Name="phoneNumber" HorizontalAlignment="Left" Height="63" Margin="236,476,0,0" VerticalAlignment="Top" Width="247" RenderTransformOrigin="0.5,0.5"
+                                               PlaceHolder="Phone Number" Grid.ColumnSpan="2">
+            <CustomControls:TextBoxWithPlaceHolder.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.562"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.49"/>
+                </TransformGroup>
+            </CustomControls:TextBoxWithPlaceHolder.RenderTransform>
+        </CustomControls:TextBoxWithPlaceHolder>
+        <CustomControls:TextBoxWithPlaceHolder x:Name="Address" HorizontalAlignment="Left" Height="63" Margin="403,474,0,0" VerticalAlignment="Top" Width="261"
+                                               PlaceHolder="Address" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="267,75,0,0" TextWrapping="Wrap" Text="Registration" VerticalAlignment="Top" Width="175" Height="39" FontSize="24" Foreground="#FF26CB2D" FontFamily="Segoe Print" Grid.Column="1" FontWeight="Bold" TextDecorations="{x:Null}"/>
+
+
+
+    </Grid>
+</Window>
