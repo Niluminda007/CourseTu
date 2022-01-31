@@ -75,8 +75,8 @@ namespace CourseTu.Pages
                 {
                     
                     Nameid.BorderBrush = Brushes.Red;
-                    Nameid.BorderThickness = new Thickness(0, 0, 0, 2);
-                    Passid.BorderBrush = Brushes.Red;
+                    Nameid.BorderThickness = new Thickness(0, 0, 0, 3);
+                    Passid.BorderBrush = Brushes.Grenn;
                     Passid.BorderThickness = new Thickness(0, 0, 0, 2);
                     MessageBox.Show("Incorrect Login Data", "Invalid", MessageBoxButton.OK, MessageBoxImage.Warning, MessageBoxResult.OK);
                 }
